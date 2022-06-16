@@ -1,4 +1,4 @@
 ==========
-brill_games
+BrillGames
 ==========
 The brillest of games
