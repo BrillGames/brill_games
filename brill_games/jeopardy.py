@@ -1,5 +1,6 @@
 from tkinter import *
 
+
 class Answer:
     def __init__(self, answer, question, points):
         self.__answer = answer
