@@ -1,4 +1,4 @@
-from tkinter import *
+#!/usr/bin/env python3
 
 
 class Answer:
@@ -7,22 +7,28 @@ class Answer:
         self.__question = question
         self.__points = points
 
-    def getAnswer(self):
+    @property
+    def answer(self):
         return self.__answer
 
-    def getQuestion(self):
-        return self.__question
-
-    def getPoints(self):
-        return self.__points
-
-    def setAnswer(self, x):
+    @answer.setter
+    def answer(self, x):
         self.__answer = x
 
-    def setQuestion(self, x):
+    @property
+    def question(self):
+        return self.__question
+
+    @question.setter
+    def question(self, x):
         self.__question = x
 
-    def setPoints(self, x):
+    @property
+    def points(self):
+        return self.__points
+
+    @points.setter
+    def points(self, x):
         self.__points = x
 
 
@@ -32,24 +38,26 @@ class Board:
         self.__columns = columns
         self.__players = players
 
-    def getAnswers(self):
+    @property
+    def answers(self):
         return self.__answers
 
-    def getColumns(self):
-        return self.__columns
-
-    def getPlayers(self):
-        return self.__players
-
-    def setAnswers(self, x):
+    @answers.setter
+    def answers(self, x):
         self.__answers = x
 
-    def setColumns(self, x):
+    @property
+    def columns(self):
+        return self.__columns
+
+    @columns.setter
+    def columns(self, x):
         self.__columns = x
 
-    def setPlayers(self, x):
+    @property
+    def players(self):
+        return self.__players
+
+    @players.setter
+    def players(self, x):
         self.__players = x
-
-
-if __name__ == "__main__":
-    pass
